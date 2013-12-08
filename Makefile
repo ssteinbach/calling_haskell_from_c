@@ -31,7 +31,7 @@ all: $(NAME)
 
 .hs.ghc_output:
 	$(ECHO) "Compiling: $<"
-	$(GHC) --make -no-hs-main $< -v > $@ 2>&1 ; 
+	$(GHC) --make -no-hs-main $< -v > $@ 2>&1 || cat /dev/null ; 
 	$(GHC) -no-link $<
 
 .ghc_output.link_output:
