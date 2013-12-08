@@ -5,3 +5,12 @@ cabal-dev
 *.chi
 *.chs.h
 .virthualenv
+
+*.swp
+
+*ghc_output
+*link_output
+*_stub.h
+
+# binary for this project
+test
